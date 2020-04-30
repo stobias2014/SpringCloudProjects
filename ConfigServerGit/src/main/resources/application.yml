@@ -1,7 +1,15 @@
 ---
 server:
    port: 8888
+#application has been removed since spring 2.0
+#security:
+   #basic:
+      #enabled: false
 spring:
+   security:
+      user:
+         name: root
+         password: password
    cloud:
       config:
          server:
