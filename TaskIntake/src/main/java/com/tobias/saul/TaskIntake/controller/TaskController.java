@@ -13,12 +13,12 @@ import com.tobias.saul.TaskIntake.processor.TaskProcessor;
 public class TaskController {
 	
 	@Autowired
-	private TaskProcessor t;
+	private TaskProcessor taskProcessor;
 	
 	@RequestMapping(path="/tasks", method = RequestMethod.POST)
 	public @ResponseBody String launchTask(@RequestBody String s) {
 		
-		t.publishRequestA(s);
+		taskProcessor.publishRequestA(s);
 		
 		System.out.println("request made");
 		
