@@ -34,7 +34,11 @@
 			<artifactId>spring-cloud-deployer-local</artifactId>
 			<version>2.3.0.RELEASE</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.amqp</groupId>
+			<artifactId>spring-rabbit-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -46,7 +50,16 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-stream-binder-rabbit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-stream-dependencies</artifactId>
+			<version>Horsham.SR4</version>
+			<type>pom</type>
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
