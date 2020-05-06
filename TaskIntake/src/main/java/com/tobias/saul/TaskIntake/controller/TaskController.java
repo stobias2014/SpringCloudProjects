@@ -20,7 +20,7 @@ public class TaskController {
 		
 		taskProcessor.publishRequestA(s);
 		
-		System.out.println("request made");
+		System.out.println("Inisde Task Controller -----> Request made");
 		
 		return "success";
 	}
